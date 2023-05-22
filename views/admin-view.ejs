@@ -1,0 +1,51 @@
+<%-include('includes/_admin-header')-%>
+
+
+<!--Header-->
+<header id="header">
+   <nav>
+   <div class="container">
+    <div class="text-center">
+        <a href="/" class="nav-brand text-dark">User Management System</a>
+    </div>
+    </div>
+</nav>
+</header>
+<!--Header-->
+
+
+<!--main-->
+<div id="site-main">
+        <div class="container">
+            <div class="box-nav d-flex-justify-between">
+                <a href="/admin-add-user" class="border-shadow">
+                    <span class="text-gradient ">New User<i class="fas fa-user"></i></span>
+                </a>
+                <a href="/admin-logout" class="btn btn-danger">Logout</a>
+            </div>
+        </div>
+
+
+<!--form handling-->
+<form>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>@email</th>
+                <th>Password</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+<%-include('includes/_view-data')-%>
+          
+        </tbody>
+    </table>
+</form>
+</div>
+</main>
+<!--main-->
+<%-include('includes/_admin-footer')-%>

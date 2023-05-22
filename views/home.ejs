@@ -1,0 +1,15 @@
+<%-include('includes/_user-header')-%>
+<div class="login-form">
+<form action="/logout" class="inline">
+<div class="field"></div>
+<div>
+    <h1 style="color:blanchedalmond">WELCOME <%=user.name%></h1>
+</div>
+
+<div>
+<a href="/logout"><button>Log out</button></a>
+</div>
+</div>
+</form>
+</div>
+<%-include('includes/_user-footer')-%>

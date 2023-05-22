@@ -1,0 +1,40 @@
+<%-include('includes/_admin-header')-%>
+    <!--Header-->
+    <header id="header">
+        <nav>
+            <div class="container">
+                <div class="text-center">
+                    <a href="/" class="nav-brand text-dark">User Management System</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--Header-->
+
+
+    <!--main-->
+    <div id="site-main">
+        <div class="container">
+            <div class="box-nav d-flex-justify-between">
+              <div class="filter">
+                <a href="/admin-view" class="border-shadow">
+                    <span class="text-gradient ">All User<i class="fas fa-user"></i></span>
+                </a>
+              </div>  
+            </div>
+        </div>
+        <div class="form-title text-center">
+          <h2 class="text-dark">New User</h2> 
+          <span class="text-light">Use the below form to create new account</span> 
+        </div>
+
+
+        <!--form handling-->
+    <%-include('includes/_admin-form')-%>
+      
+        <!--form handling-->
+      
+    </div>
+    </main>
+    <!--main-->
+    <%-include('includes/_admin-footer')-%>

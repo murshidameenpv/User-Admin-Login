@@ -1,0 +1,27 @@
+<%-include('includes/_user-header')-%>
+    <div class="login-form">
+        <div class="text">
+            LOGIN
+        </div>
+        <form action="/api/user/login" method="POST">
+            <div class="field">
+                <div class="fas fa-envelope"></div>
+                <input type="email" name="email" placeholder="Email">
+            </div>
+            <div class="field">
+                <div class="fas fa-lock"></div>
+                <input type="password" name="password" placeholder="Password"><br>
+            </div>
+            <%if (locals.message) {%>
+                <text id="msg" class="blink_me ">
+                    <%=message%>
+                </text>
+                <%}%>
+            <button>LOGIN</button>
+            <div class="link">
+                Not a member?
+                <a href="/user-signup">SignUp now</a>
+            </div>
+        </form>
+    </div>
+<%-include('includes/_user-footer')-%>

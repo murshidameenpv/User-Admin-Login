@@ -1,0 +1,18 @@
+<%-include('includes/_user-header')-%>
+    <div class="login-form">
+        <div class="text">
+            ADMIN
+        </div>
+        <form action="/admin-login" method="POST">
+            <div class="field">
+                <div class="fas fa-envelope"></div>
+                <input type="email" name="email" placeholder="Email">
+            </div>
+            <div class="field">
+                <div class="fas fa-lock"></div>
+                <input type="password" name="password" placeholder="Password">
+            </div>
+            <button>LOGIN</button>
+        </form>
+    </div>
+<%-include('includes/_user-footer')-%>
